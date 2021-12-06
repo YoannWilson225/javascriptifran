@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEVINE LE NOMBRE</title>
+</head>
+<body>
+  <center>
+    <div class="box-form">
+      <h1>Devinez le nombre</h1>
+      <h4>Entrez un nombre entre 1 et 99</h4>
+      <form action="" id="devin-form" onsubmit="deviner(this)">
+        <input type="number" id="nbrdevine" placeholder="Entrez le nombre !">
+        <button type="submit" class="btn">Soumettre</button>
+      </form>
+    </div>
+    <div class="box-tryagain">
+      <h1>Bravo vous avez trouvé le nombre en <span class="show"></span> tentatives</h1>
+      <h4>Voulez-vous rejouer ?</h4>
+      <form action="" onsubmit="tryAgain()">
+        <button type="submit" class="again">Rejouer</button>
+      </form>
+    </div>
+  </center>
+
+  <style>
+
+    body {
+      margin: 0;
+      padding:0;
+    }
+
+    .box-form {
+      align-items: center;
+      font-size: 25px;
+      position: absolute;
+      top: 18%;
+      left: 28%;
+      background-color:grey;
+      padding: 5%;
+      border-radius: 2em;
+    }
+
+    .box-tryagain {
+      display: none;
+      align-items: center;
+      font-size: 25px;
+      position: absolute;
+      top: 18%;
+      left: 28%;
+      background-color:grey;
+      padding: 5%;
+      border-radius: 2em;
+    }
+
+
+
+
+    .cache .box-form {
+      display: none;
+    }
+
+    .montre .box-tryagain {
+      display: block;
+    }
+
+    #nbrdevine {
+      padding: 3%;
+      font-size: 20px;
+      border-radius: 2em;
+      border:none;
+    }
+
+    .btn {
+      padding:3%;
+      border-radius: 2em;
+      border:none;
+    }
+
+    .btn:hover {
+      background-color: green;
+      color: white;
+    }
+
+    .again {
+      padding:3%;
+      border-radius: 2em;
+      border:none;
+    }
+
+    .again:hover {
+      background-color: green;
+      color: white;
+    }
+
+
+
+
+  </style>
+
+  <script src="index.js"></script>
+</body>
+</html>

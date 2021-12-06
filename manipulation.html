@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1 id="title">IFRAN TEST</h1>
+    <button onclick="js_click()">Modify</button>
+
+    <form action="" id="user_form" onsubmit="getFormValues(this)">
+      <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+      <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+      <button type="submit">Soumettre</button>
+    </form>
+
+    <div id="user_data" style="margin-top:10px;">
+      <table id="table_data" border="1" style="border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Supprimer</th>
+          </tr>
+          <tbody>
+          </tbody>
+        </table>
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>
